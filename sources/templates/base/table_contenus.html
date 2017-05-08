@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th></th>
+        <th>ID</th>
+        <th><bx_text:_mg_newsl_contenu_titre /></th>
+        <th><bx_text:_Language /></th>
+    </tr>
+    <bx_repeat:contenus>
+        <tr class="__class__">
+            <td style="font-size: smaller; color: gray;">__rank__.</td>
+            <td>__ID__</td>
+            <td>__Titre__</td>
+            <td>__langue__</td>
+            <td><a href="javascript:editContenuPopup(__ID__);"><img src="<bx_icon_url:edit.png />" title="<bx_text:_Edit />" width="16" height="16" /></a></td>
+            <td><a href="javascript:confirmDelContenuPopup(__ID__);"><img src="<bx_icon_url:delete.png />" title="<bx_text:_Delete />" width="16" height="16" /></a></td>
+        </tr>
+    </bx_repeat:contenus>
+</table>

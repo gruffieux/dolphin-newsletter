@@ -1,0 +1,173 @@
+SELECT.MembreSelect {
+    width: 300px;
+    height: 300px;
+}
+
+SELECT.ContenuSelect {
+    width: 300px;
+    height: 300px;
+}
+
+.Active {
+    color: green;
+}
+
+.Pending {
+    color: blue;
+}
+
+.Unactive {
+    color: red;
+}
+
+TR.Pair {
+    background-color: #ffffff;
+}
+
+TR.Unpair {
+    background-color: #f4f7fa;
+}
+
+div#mg-newsl-addCampagneMembre {
+    display: none;
+    background-color: #f4f7fa;
+    width: 772px;
+}
+
+div#mg-newsl-addCampagneContenu {
+    display: none;
+    background-color: #f4f7fa;
+    width: 772px;
+}
+
+div#mg-newsl-editContenu {
+    display: none;
+    width: 800px;
+}
+
+div#mg-newsl-confirmDelCampagne,
+div#mg-newsl-confirmDelMembre,
+div#mg-newsl-confirmDelContenu,
+div#mg-newsl-confirmAction,
+div#mg-newsl-confirmSend {
+    display: none;
+    width: 280px;
+}
+
+div#mg-newsl-membreCampagnes,
+div#mg-newsl-editCampagne,
+div#mg-newsl-editMembre {
+    display: none;
+    width: 562px;
+}
+
+div#mg-newsl-membreCampagnes table.popup_form_wrapper,
+div#mg-newsl-membreCampagnes table.popup_form_wrapper td.container,
+div#mg-newsl-editCampagne table.popup_form_wrapper,
+div#mg-newsl-editCampagne table.popup_form_wrapper td.container,
+div#mg-newsl-editContenu table.popup_form_wrapper,
+div#mg-newsl-editContenu table.popup_form_wrapper td.container,
+div#mg-newsl-addCampagneMembre table.popup_form_wrapper,
+div#mg-newsl-addCampagneMembre table.popup_form_wrapper td.container,
+div#mg-newsl-addCampagneContenu table.popup_form_wrapper,
+div#mg-newsl-addCampagneContenu table.popup_form_wrapper td.container,
+div#mg-newsl-editMembre table.popup_form_wrapper,
+div#mg-newsl-editMembre table.popup_form_wrapper td.container {
+    width: auto;
+}
+
+div#mg-newsl-membreCampagnes div.adm-design-box,
+div#mg-newsl-editCampagne div.adm-design-box,
+div#mg-newsl-editContenu div.adm-design-box,
+div#mg-newsl-addCampagneMembre div.adm-design-box,
+div#mg-newsl-addCampagneContenu div.adm-design-box,
+div#mg-newsl-editMembre div.adm-design-box {
+    margin-bottom: 0px;
+}
+
+div#mg-newsl-membreCampagnes div.adm-db-close,
+div#mg-newsl-editCampagne div.adm-db-close,
+div#mg-newsl-editContenu div.adm-db-close,
+div#mg-newsl-addCampagneMembre div.adm-db-close,
+div#mg-newsl-addCampagneContenu div.adm-db-close,
+div#mg-newsl-editMembre div.adm-db-close {
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#mg-newsl-membreCampagnes div.adm-db-close img,
+div#mg-newsl-editCampagne div.adm-db-close img,
+div#mg-newsl-editContenu div.adm-db-close img,
+div#mg-newsl-addCampagneMembre div.adm-db-close img,
+div#mg-newsl-addCampagneContenu div.adm-db-close img,
+div#mg-newsl-editMembre div.adm-db-close img {
+    width: 28px;
+    height: 28px;
+}
+
+div#mg-newsl-membreCampagnes-content {
+    width: 360px;
+    height: 360px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div#mg-newsl-addCampagneMembre-content {
+    width: 690px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+div#mg-newsl-addCampagneContenu-content {
+    width: 690px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+div#mg-newsl-editContenu-content {
+    width: 718px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+div#mg-newsl-editCampagne-content {
+    width: 480px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+div#mg-newsl-editMembre-content {
+    width: 480px;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+div#mg-newsl-editContenu-content table.form_advanced_table,
+div#mg-newsl-editContenu-content table.form_advanced_table tr {
+    width: 716px;
+    overflow: hidden;
+}
+
+div#mg-newsl-membreCampagnes-content table.form_advanced_table,
+div#mg-newsl-membreCampagnes-content table.form_advanced_table tr,
+div#mg-newsl-editCampagne-content table.form_advanced_table,
+div#mg-newsl-editCampagne-content table.form_advanced_table tr,
+div#mg-newsl-editMembre-content table.form_advanced_table,
+div#mg-newsl-editMembre-content table.form_advanced_table tr {
+	width: 478px;
+	overflow: hidden;
+}
+
+iframe.hidden {
+    width: 1px;
+    height: 1px;
+    display: none;
+}

@@ -1,0 +1,70 @@
+<form id="formMembres" action="" method="post">
+    <input type="text" name="q" />
+    <select name="idLangueSearch">
+        <option value="0"><bx_text:_Any /></option>
+        <bx_repeat:langues>
+            <option value="__key__">__value__</option>
+        </bx_repeat:langues>
+    </select>
+    <select name="idCampagneSearch">
+        <option value="0"><bx_text:_None /></option>
+        <bx_repeat:campagnes>
+            <option value="__ID__">__Nom__</option>
+        </bx_repeat:campagnes>
+    </select>
+    <input type="submit" value="<bx_text:_Search />" />
+    <input type="button" id="botsNewBtn" value="Bots Check" title="<bx_text:_mg_newsl_botsCheck_info />" />
+    <span style="padding: 20px;"><bx_text:_Results />: __searchTotal__</span>
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th><a href="javascript:trieMembre('ID');">ID</a></th>
+            <th><a href="javascript:trieMembre('Email');"><bx_text:_FieldCaption_Email_Join /></a></th>
+            <th><a href="javascript:trieMembre('Nom');"><bx_text:_FieldCaption_LastName_Join /></a></th>
+            <th><a href="javascript:trieMembre('Prenom');"><bx_text:_FieldCaption_FirstName_Join /></a></th>
+            <th><a href="javascript:trieMembre('DateNaissance');"><bx_text:_FieldCaption_DateOfBirth_Join /></a></th>
+            <th><a href="javascript:trieMembre('Pays');"><bx_text:_FieldCaption_Country_Join /></a></th>
+            <th><a href="javascript:trieMembre('IDLangue');"><bx_text:_Language /></a></th>
+            <th><a href="javascript:trieMembre('Ville');"><bx_text:_FieldCaption_City_Join /></a></th>
+            <th><a href="javascript:trieMembre('Zip');"><bx_text:_FieldCaption_zip_Join /></a></th>
+            <th><a href="javascript:trieMembre('IDSource');"><bx_text:_mg_newsl_membre_source /></a></th>
+            <th><a href="javascript:trieMembre('BotScore');"><bx_text:_mg_newsl_membre_botScore /></a></th>
+        </tr>
+        <bx_repeat:membres>
+            <tr class="__class__">
+                <td style="font-size: smaller; color: gray;">__rank__.</td>
+                <td><input type="checkbox" class="SelectMembre" value="__ID__" /></td>
+                <td>__ID__</td>
+                <td>__Email__</td>
+                <td>__Nom__</td>
+                <td>__Prenom__</td>
+                <td>__DateNaissance__</td>
+                <td>__Pays__</td>
+                <td>__langue__</td>
+                <td>__Ville__</td>
+                <td>__Zip__</td>
+                <td>__IDSource__</td>
+                <td>__BotScore__</td>
+                <td><a href="javascript:editMembrePopup(__ID__);"><img src="<bx_icon_url:edit.png />" title="<bx_text:_Edit />" width="16" height="16" /></a></td>
+                <td><a href="javascript:viewMembreCampagnePopup(__ID__);"><img src="<bx_icon_url:eye.png />" title="<bx_text:_mg_newsl_info_subscriptionLog />" width="16" height="16" /></a></td>
+                <td><a href="javascript:confirmDelMembrePopup(__ID__);"><img src="<bx_icon_url:delete.png />" title="<bx_text:_Delete />" width="16" height="16" /></a></td>
+            </tr>
+        </bx_repeat:membres>
+        <tr>
+            <input type="hidden" id="actionMembres" name="actionMembres" />
+            <input type="hidden" id="membreStr" name="membreStr" />
+            <input type="hidden" id="blackList" name="blackList" />
+            <td><input type="checkbox" id="selectAllMembres" /></td>
+            <td colspan="11">
+                <select name="idCampagne">
+                    <bx_repeat:actionCampagnes>
+                        <option value="__ID__">__Nom__</option>
+                    </bx_repeat:actionCampagnes>
+                </select>
+            </td>
+            <td><a class="ActionMembresBtn" id="subscribeMembres" href="javascript:;"><img src="<bx_icon_url:action_subscribe.png />" title="<bx_text:_mg_newsl_subscribe />" width="16" height="16" /></a></td>
+            <td><a class="ActionMembresBtn" id="deleteMembres" href="javascript:;"><img src="<bx_icon_url:delete.png />" title="<bx_text:_Delete />" width="16" height="16" /></a></td>
+        </tr>
+    </table>
+</form>

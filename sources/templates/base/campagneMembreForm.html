@@ -1,0 +1,69 @@
+<div id="mg-newsl-addCampagneMembre">
+    <table class="popup_form_wrapper">
+		<tr>
+			<td class="corner"><img src="<bx_image_url:op_cor_tl.png />" alt="" /></td>
+			<td class="side_ver"><img src="<bx_image_url:spacer.gif />" alt="" /></td>
+			<td class="corner"><img src="<bx_image_url:op_cor_tr.png />" alt="" /></td>
+		</tr>
+		<tr>
+			<td class="side"><img src="<bx_image_url:spacer.gif />" alt="" /></td>
+			<td class="container">
+    			<div class="adm-design-box">
+                	<div class="adm-db-head">
+                        <bx_text:_mg_newsl_addCampagneMembre />
+                        <div class="dbTopMenu">
+                            <div class="adm-db-close" style="background-image:url('<bx_image_url:close.gif />')">
+                                <a href="javascript:void(0)" onclick="javascript:$('#mg-newsl-addCampagneMembre').dolPopupHide({});">
+                                    <img src="<bx_image_url:spacer.gif />" width="28px" height="28px" />
+                                </a>
+                            </div>
+                        </div>
+                	</div>
+                	<div class="adm-db-content">
+                        <div class="adm-db-content-wrapper">
+                            <div id="mg-newsl-addCampagneMembre-content">
+                                <iframe name="mg-newsl-addCampagneMembre-iframe" class="hidden"></iframe>
+                                <form>
+                                    <input type="hidden" id="idCampagne" value="0" />
+                                    <table border="0" cellspacing="4" cellpadding="4">
+                                        <tr>
+                                            <td><bx_text:_mg_newsl_membres /></td>
+                                            <td></td>
+                                            <td><bx_text:_mg_newsl_campagneMembres /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select multiple class="MembreSelect" id="membreChooser">
+                                                </select>
+                                            </td>
+                                            <td>
+												<div id="membreLoader" style="display: none;">
+													<img src="<bx_image_url:loading.gif />" />
+												</div>
+                                                <div id="membreActions" style="display: none;">
+													<input type="button" id="addMembre" value="&gt;" />
+													<br />
+													<input type="button" id="removeMembre" value="&lt;" />
+												</div>
+                                            </td>
+                                            <td>
+                                                <select multiple class="MembreSelect" id="membreUnchooser">
+                                                </select>
+                                            </td>
+                                        </tr>  
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>                	
+                </div>                    
+            </td>
+			<td class="side"><img src="<bx_image_url:spacer.gif />" alt="" /></td>
+		</tr>
+		<tr>
+			<td class="corner"><img src="<bx_image_url:op_cor_bl.png />" alt="" /></td>
+			<td class="side_ver"><img src="<bx_image_url:spacer.gif />" alt="" /></td>
+			<td class="corner"><img src="<bx_image_url:op_cor_br.png />" onload="if( navigator.appName == 'Microsoft Internet Explorer' && window.version && version >= 5.5 && version < 7 ) png_fix();" alt="" /></td>
+		</tr>
+	</table>
+</div>

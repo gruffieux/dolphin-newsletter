@@ -1,0 +1,27 @@
+<table>
+    <tr>
+        <th></th>
+        <th>ID</th>
+        <th><bx_text:_mg_newsl_campagne_nom /></th>
+        <th><bx_text:_mg_newsl_campagne_desc /></th>
+        <th><bx_text:_mg_newsl_campagne_dateEcheance /></th>
+        <th><bx_text:_mg_newsl_campagne_dateEnvoi /></th>
+    </tr>
+    <bx_repeat:campagnes>
+        <tr class="__class__">
+            <td style="font-size: smaller; color: gray;">__rank__.</td>
+            <td>__ID__</td>
+            <td>__Nom__</td>
+            <td>__desc__</td>
+            <td>__DateEcheance__</td>
+            <td>__DateEnvoi__</td>
+            <td><a href="javascript:editCampagnePopup(__ID__);"><img src="<bx_icon_url:edit.png />" title="<bx_text:_Edit />" width="16" height="16" /></a></td>
+            <td><a href="javascript:addCampagneContenuPopup(__ID__);"><img src="<bx_icon_url:icon_yellow.gif />" title="<bx_text:_mg_newsl_addCampagneContenu />" width="16" height="16" /></a></td>
+            <td><a href="javascript:addCampagneMembrePopup(__ID__);"><img src="<bx_icon_url:mbs.png />" title="<bx_text:_mg_newsl_addCampagneMembre />" width="16" height="16" /></a></td>
+            <td><a href="?r=newsletter/preview/__ID__" target="_blank"><img src="<bx_icon_url:eye.png />" title="<bx_text:_Preview />" width="16" height="16" /></a></td>
+            <td><a href="?r=newsletter/changeCampagneState/__ID__/__newState__"><img src="__newStateIcon__" title="__newStateTitle__" width="16" height="16" /></a></td>
+            <td><a href="javascript:confirmDelCampagnePopup(__ID__);"><img src="<bx_icon_url:delete.png />" title="<bx_text:_Delete />" width="16" height="16" /></a></td>
+        </tr>
+    </bx_repeat:campagnes>
+</table>
+<div align="center"><button onclick="send()"><bx_text:_mg_newsl_send /></button></div>

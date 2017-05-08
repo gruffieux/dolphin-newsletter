@@ -1,0 +1,30 @@
+<form id="formStats" action="" method="post">
+    <input type="text" name="q" />
+    <select name="IDCampagne">
+        <option value="0"><bx_text:_None /></option>
+        <bx_repeat:campagnes>
+            <option value="__ID__">__Nom__</option>
+        </bx_repeat:campagnes>
+    </select>
+    <input type="text" id="from" name="from" />
+    <input type="submit" value="<bx_text:_Search />" />
+    <span style="padding: 20px;"><bx_text:_Results />: __searchTotal__</span>
+    <table>
+        <tr>
+            <th></th>
+            <th><bx_text:_mg_newsl_contenu_campagne /></th>
+            <th><bx_text:_FieldCaption_Email_Join /></th>
+            <th><bx_text:_mg_newsl_stats_from /></th>
+            <th><bx_text:_mg_newsl_stats_hits /></th>
+        </tr>
+        <bx_repeat:stats>
+            <tr class="__class__">
+                <td style="font-size: smaller; color: gray;">__rank__.</td>
+                <td>__IDCampagne__</td>
+                <td>__Email__</td>
+                <td>__Date__</td>
+                <td>__Hits__</td>
+            </tr>
+        </bx_repeat:stats>
+    </table>
+</form>

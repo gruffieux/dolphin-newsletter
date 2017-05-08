@@ -1,0 +1,13 @@
+<div id="dialog-confirm" style="display: none;"><p><bx_text:_mg_newsl_confirmDelMe /></p></div>
+<input type="hidden" id="text-deleted" value="<bx_text:_mg_newsl_deleted />" />
+<p>__email__<br /><a href="/modules/?r=newsletter/me/__hash__"><bx_text:_mg_newsl_settingsAndLanguages /></a> <a href="javascript:deleteMe('__hash__');"><bx_text:_Delete /></a></p>
+<table align="center" width="100%">
+    <bx_repeat:campagnes>
+        <tr valign="top">
+            <td width="5%"><input type="checkbox" class="CampagneChecker" __checkedAttr__ value="__ID__" /></td>
+            <td width="95%">__Desc__</td>
+        </tr>
+    </bx_repeat:campagnes>
+</table>
+__inscriptionForm__
+<p id="message"></p>
